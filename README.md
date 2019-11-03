@@ -1,5 +1,7 @@
 ## table-component-maksym-prykhodko
 
+![github](https://user-images.githubusercontent.com/20598016/68092373-1fe10900-fe93-11e9-8e22-06604db4e0e2.gif)
+
 ## Установка
 Вам нужно установить table-component-maksym-prykhodko с помощью npm:
 
