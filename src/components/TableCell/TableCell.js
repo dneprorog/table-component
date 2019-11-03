@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {
     Input,
     Td
-} from "../../ui";
+} from "../ui";
 
 export default function TableCell({cellData, onProductTableUpdate}) {
     const {

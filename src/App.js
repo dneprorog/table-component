@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import  data  from './data.json';
 
-import Table from './components/Table/Table';
+import Table from './components';
 import {
     Container,
     DotWrapper,
     Dot,
     Loading
-} from './ui';
+} from './components/ui';
 
 export default class App extends Component {
     constructor(props) {

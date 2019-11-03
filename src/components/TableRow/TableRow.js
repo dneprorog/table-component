@@ -7,7 +7,7 @@ import {
     Tr,
     Td,
     Button
-} from '../../ui';
+} from '../ui';
 
 export default function  TableRow({product, onDelEvent, onProductTableUpdate, disableButton}) {
     const {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TableRow from '../TableRow/TableRow';
+import TableRow from './TableRow/TableRow';
 import {
     Button,
     TableComponent,
@@ -9,7 +9,7 @@ import {
     Tbody,
     Th,
     Tr
-} from '../../ui';
+} from './ui';
 
 export default function Table(props) {
     const {

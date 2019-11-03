@@ -1,14 +1,26 @@
 {
-  "name": "table-component",
+  "name": "table-component-maksym-prykhodko",
   "version": "1.0.0",
   "private": false,
+  "homepage": "https://dneprorog.github.io/table-component/",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "babel": {
-    "presets": [ "@babel/react" ]
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": "last 2 versions"
+          }
+        }
+      ],
+      "@babel/react"
+    ]
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -19,7 +31,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "pre-publish": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components --out-dir dist --copy-files",
+    "publish": "npm publish"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,5 +54,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dneprorog/table-component"
   }
 }
